@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "manrope";
+  src: url("../assets/fonts/manrope.ttf");
+}
+
+* {
+  font-family: "manrope", sans-serif;
+  transition: all 1s;
+  color: white;
+}
+
+/* ////////////////////// NAVBAR ///////////// */
+.nav-item .btnStyle:hover {
+  background-color: #f14d5d;
+  border-color: #f14d5d;
+}
+
+/* ///////////////////////// SECTION A STYLE ///////////////////// */
+
+.headerSection {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-image: url("../assets/images/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.overlayer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #120f2dcc 45%, #120f2d00 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 1;
+}
+
+.bodysection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  flex-direction: column;
+}
+
+.HeaderText {
+  font-size: 49px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.btnStyle {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid #f14d5d;
+}
+.btnStyleB {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.btnStyle:hover {
+  background-color: transparent;
+  border-color: white;
+}
+.btnStyleB:hover {
+  background-color: #f14d5d;
+  border-color: #f14d5d;
+}
+
+/* ///////////////////////// SECTION B STYLE ///////////////////// */
+
+.sectionB {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* height: 80vh; */
+  width: 100%;
+  padding: 130px 0px 130px 0px;
+}
+
+.sectionB .colB {
+  padding-right: 170px;
+}
+
+.userDetail {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.bgDesign {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 400px;
+  background: url("../assets/images/sectionBbg.png");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.sectionB .userImage {
+  border-radius: 10px;
+  width: 455px;
+  height: 455px;
+}
+
+.sectionB .bgdesignB {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  width: 298;
+  height: 148;
+  z-index: -1;
+}
+.sectionB .bgdesignA {
+  position: absolute;
+  bottom: 0px;
+  left: 40vw;
+  width: 298;
+  height: 148;
+  z-index: -1;
+}
+
+/* ///////////////////////// SECTION C STYLE ///////////////////// */
+.topSection h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+.topSection h2 {
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.cardImageContent {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+.cardImageContent button {
+  border: none;
+  padding: 4px 14px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.roundBox {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .titleStyle {
+  font-weight: 700;
+  font-size: 20px;
+  padding-right: 90px;
+}
+.facultyImage .thumbnailImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.sectionC .buttoncatg {
+  padding: 15px 20px;
+  border: none;
+}
+
+/* ///////////////////////// SECTION D STYLE ///////////////////// */
+.sectionD {
+  padding: 40px 0px;
+  background: url("../assets/images/backgroundImageShades.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionD .topSection {
+  margin-bottom: 50px;
+}
+.swiperParent {
+  width: 80%;
+  height: 250px;
+}
+
+/* /////////////////////// .sectionD SWIPER SLIDER  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+.swiper-slide .facultyImage {
+  display: flex;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* /////////////////////////////// FOOTER //////////////// */
+.listStyle{
+    list-style: none;
+}
+
+
+@media (max-width: 769px) {
+  .HeaderText {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .bodysection {
+    padding-left: 20px;
+  }
+  .sectionB .colB {
+    padding: 0px 10px;
+  }
+  .sectionB .userImage {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .card-body .titleStyle {
+    padding: 0px 10px 0px 10px;
+  }
+  .topSection > .blackTextColor {
+    font-size: 25px;
+  }
+}
